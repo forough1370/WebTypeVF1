@@ -1,0 +1,185 @@
+@font-face {
+ font-family: 'AdelleGX';
+ src: url('assets/AdelleGX.ttf') format('truetype-variations');
+}
+
+/*@font-face {
+ font-family: 'FivoSansModernRegular';
+ src: url('FivoSansModern-Regular.otf');
+}
+
+ @font-face {
+ font-family: 'FivoSansModernBold';
+ src: ('urlFivoSansModern-Bold.otf');
+ }
+*/
+body{
+background: black;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  color: lightgrey
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: lightgrey; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: darkgrey; 
+}
+
+main{
+  display:flex;
+  flex-wrap: wrap-reverse;
+
+}
+
+h1{
+    font-family: termina,sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color:lightgrey;
+    font-size: 2.8em;
+    line-height: 1.1em;
+    text-transform: uppercase;
+    color:lightgrey;
+}
+
+/*left column properties
+*/
+.leftcolumn{
+    margin: 1.75em;
+    overflow: auto;
+    height: 100vh;
+    z-index: 100;
+    flex:0 0 380px;
+}
+
+.question-answer{
+    font-family: termina,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#888888;
+    font-size: 1em;
+    line-height: 1.4em;
+}
+
+.intro{
+    font-family: termina,sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color:lightgrey;
+    font-size: 16px;
+    line-height: 21px;
+    color:lightgrey;
+    margin-right: 20px;
+    border-bottom: 2px solid lightgrey;
+}
+
+.questions{
+    font-family: termina,sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #C0C0C0;
+    font-size: 10px;
+    line-height: 15px;
+    padding:10px 20px 15px 0px;
+}
+
+ul{
+    font-family: termina,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#888888;
+}
+/*left column properties*/
+
+
+/*right column properties*/
+.rightcolumn{
+    width: 63%;
+    padding: 0 10px 0 0;
+    margin-left: 30px;
+    margin-top: 300px;
+    flex: 1 1 480px;
+  }
+
+div{
+    padding-bottom: 10px;
+}
+
+.typehere{
+    font-family:'AdelleGX';
+    font-weight: normal;
+    text-transform: capitalize;
+    font-variation-settings: 'wght' var(--text-wght);
+    color:white;
+    font-size: 210px;
+}
+
+@media only screen and (max-width:1005px){
+  .rightcolumn{
+    margin-top: 50px;
+  }
+  .typehere{
+    font-size: 210px;
+  }
+}
+
+@media only screen and (max-width:750px){
+  .rightcolumn{
+    margin-top: 50px;
+  }
+  .typehere{
+    font-size: 150px;
+  }
+  .leftcolumn{
+    flex:0 1 400px;
+  }
+
+  h1{
+    font-size: 2em;
+  }
+
+  .intro{
+    font-size: 14px;
+
+  }
+}
+
+
+
+.slidecontainer {
+  width: 50%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+/*right column properties*/
