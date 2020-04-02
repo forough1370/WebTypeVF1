@@ -13,6 +13,17 @@
  src: ('urlFivoSansModern-Bold.otf');
  }
 */
+
+nav{
+display: flex;
+flex-direction: row;
+}
+
+
+.navigation li{
+  order:1;
+}
+
 body{
 background: black;
 }
@@ -123,8 +134,8 @@ div{
 .typehere{
     font-family:'AdelleGX';
     font-weight: normal;
-    text-transform: capitalize;
-    font-variation-settings: 'wght' var(--text-wght);
+    text-transform: uppercase;
+    font-variation-settings: 'wght'500 to 1000;
     color:white;
     font-size: 210px;
 }
@@ -158,28 +169,3 @@ div{
 
   }
 }
-
-
-
-.slidecontainer {
-  width: 50%; /* Width of the outside container */
-}
-
-/* The slider itself */
-.slider {
-  -webkit-appearance: none;  /* Override default CSS styles */
-  appearance: none;
-  width: 100%; /* Full-width */
-  height: 25px; /* Specified height */
-  background: #d3d3d3; /* Grey background */
-  outline: none; /* Remove outline */
-  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-  transition: opacity .2s;
-}
-
-/* Mouse-over effects */
-.slider:hover {
-  opacity: 1; /* Fully shown on mouse-over */
-}
-/*right column properties*/
